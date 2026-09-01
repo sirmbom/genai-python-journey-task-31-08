@@ -35,7 +35,7 @@ python -m test_tasks.test_strings
 
 ### Main task (password analyzer)
 
-Create a `main_task.py` and an environment variable named `PASSWORD` and give it your value (create your own `.env` file). Evaluates the password strength. The script should print a short summary of checks and a final strength rating.
+Create a folder with your name. Inside it, create a `main_task.py` file and a `.env` file with an environment variable named `PASSWORD` and give it your value. Write a script to evaluate the password strength in the file. The script should print a short summary of checks and a final strength rating.
 
 You would score and check the PASSWORD as follows:
 
@@ -53,6 +53,8 @@ You would score and check the PASSWORD as follows:
 - Loops and counting: iterate characters to count categories (use `for` loop, optionally `any()` or generator expressions).
 - Conditionals: map checks/score to a human-friendly rating (e.g., Weak / Moderate / Strong) using `if`/`elif`/`else`.
 - Output: print a concise summary (which checks passed, computed score, and rating).
+
+#### Then push to your remote on github and open a pull request after completing the tasks.
 
 
 
