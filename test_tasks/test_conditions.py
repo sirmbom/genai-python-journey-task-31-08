@@ -6,16 +6,18 @@ block (1-3 lines) implements grading and leap-year checks.
 
 # Threshold constants (six single-line TODOs below)
 # TODO: set thresholds and sample values
-A = None  # TODO: set to 90
-B = None  # TODO: set to 80
-C = None  # TODO: set to 70
-D = None  # TODO: set to 60
-score = None  # TODO: set a sample score, e.g. 72
-year = None  # TODO: set a sample year, e.g. 2024
+A = 90  # TODO: set to 90
+B = 80  # TODO: set to 80
+C = 70  # TODO: set to 70
+D = 60  # TODO: set to 60
+score = 72  # TODO: set a sample score, e.g. 72
+year = 2024  # TODO: set a sample year, e.g. 2024
 
 # Final block (1-3 lines): compute grade with a single expression,
 # compute leap-year boolean, and print results. Replace the placeholders.
 # TODO: complete the block below (max 3 lines)
-grade = None  # TODO: set to a chained conditional expression mapping score->grade
-is_leap = None  # TODO: set to leap-year boolean expression
-print(f"score={score} -> grade={grade}; year={year} leap={is_leap}")
+grade = "A" if score >= A else "B" if score >= B else "C" if score >= C else "D" if score >= D else "F" 
+is_leap = year % 4 == 0 and (year % 100 !=0 or year %400 == 0)
+print(f"score={score} -> grade={grade}; year={year}; leap={is_leap}") # TODO: set to a chained conditional expression mapping score->grade
+# TODO: set to leap-year boolean expression
+
