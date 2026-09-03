@@ -29,13 +29,8 @@ else:
 # Final block (1-3 lines): compute grade with a single expression,
 # compute leap-year boolean, and print results. Replace the placeholders.
 # TODO: complete the block below (max 3 lines)
-if year%4 == 0 and year%100 != 0:
-    leap_condition = True
-elif year%400 == 0 and year%100 == 0:
-    leap_condition = True
-else:
-    leap_condition = False
+grade = "A" if score >= A else "B" if score >= B else "C" if score >= C else "D" if score >= D else "F" 
+is_leap = year % 4 == 0 and (year % 100 !=0 or year %400 == 0)
+print(f"score={score} -> grade={grade}; year={year}; leap={is_leap}") # TODO: set to a chained conditional expression mapping score->grade
+# TODO: set to leap-year boolean expression
 
-grade = letter  # TODO: set to a chained conditional expression mapping score->grade
-is_leap = leap_condition  # TODO: set to leap-year boolean expression
-print(f"score={score} -> grade={grade}; year={year} leap={is_leap}")
